@@ -29,7 +29,13 @@ WHERE Age is NOT NULL
 ORDER BY Age 
 ;
 
--------------------------------------
+---------------Having Clauses---------
+select Jobtitle, Count(JobTitle)
+from employeesdetails 
+Join employeesalary
+on Employeesalary.EmployeeID=Employeesdetails.EmployeeID
+Group by JobTitle
+Having Count(JobTitle) >1 ;
 
 
 
