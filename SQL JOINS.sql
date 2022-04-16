@@ -1,3 +1,4 @@
+use marriage
 select * from ur.myemployee;
 select * from ur.mysalary;
 select * from ur.myphonenum;
